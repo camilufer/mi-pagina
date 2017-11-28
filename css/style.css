@@ -1,0 +1,101 @@
+/**
+*** SIMPLE GRID
+*** (C) ZACH COLE 2016
+**/
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic);
+
+/* UNIVERSAL */
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%; 
+  
+}
+
+/* ROOT FONT STYLES */
+
+* {
+	box-sizing: border-box;
+  font-family: 'Lato', Helvetica, sans-serif;
+  color: pink;
+  margin:0;
+  padding: 0;
+}
+  p{
+  color: black;
+  display: block;
+  }
+
+header{
+	height: 4em;
+  width: 100%;
+  background-color: #343A40;
+}
+
+
+
+.imagenuno {
+    height: 10em;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenuno > .crop {
+    position:absolute;
+    left: -100%;
+    right: -100%;
+    top: -100%;
+    bottom: -50%;
+    margin: auto;
+    min-height: 30%;
+    min-width: 100%;
+}
+
+.cover {
+  width: 120em;
+  object-fit: cover;
+}
+
+li{
+  display: inline-block;
+  text-align:center; 
+  
+}
+
+h1{
+	font-size: 20px;
+  padding: 0.4em;
+}
+a{
+  text-decoration: none;
+  padding: 0.4em;
+}
+
+ul{
+ 
+  display:inline-block;
+  list-style: none;
+
+}
+
+
+
+footer{
+    height: 4em;
+  width: 100%;
+  background-color: #343A40;
+}
+
+h3{
+  font-size: 15px;
+  padding: 1.5em;
+  text-align: center;
+}
+
