@@ -10,7 +10,7 @@
 html,
 body {
   height: 100%;
-  width: 100%;
+  width: auto;
   margin: 0;
   padding: 0;
   left: 0;
@@ -24,25 +24,39 @@ body {
 * {
 	box-sizing: border-box;
   font-family: 'Lato', Helvetica, sans-serif;
-  color: pink;
   margin:0;
   padding: 0;
+  color: pink;
 }
-  p{
-  color: black;
-  display: block;
-  }
-
+ 
 header{
 	height: 4em;
   width: 100%;
   background-color: #343A40;
 }
 
+h1{
+  font-size: 20px;
+  padding: 0.4em;
+}
 
+ul{
+  display:inline-block;
+  list-style: none;
+}
+
+li{
+  display: inline-block;
+  text-align:center;  
+}
+
+a{
+  text-decoration: none;
+  padding: 0.4em;
+}
 
 .imagenuno {
-    height: 10em;
+    height: 8em;
     overflow: hidden;
     position: relative;
 }
@@ -58,37 +72,30 @@ header{
     min-width: 100%;
 }
 
-.cover {
-  width: 120em;
-  object-fit: cover;
+ p{
+  color: black;
+  display: block;
 }
 
-li{
-  display: inline-block;
-  text-align:center; 
-  
+h2{
+  font-size: 20px;
+  color: purple;
 }
 
-h1{
-	font-size: 20px;
-  padding: 0.4em;
-}
-a{
-  text-decoration: none;
-  padding: 0.4em;
+.row:before, .row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-ul{
- 
-  display:inline-block;
-  list-style: none;
-
+[class*="col-"] {
+  float: left;
+  min-height: 0.5em;
+  padding: 1em; /* gutters */
 }
-
-
 
 footer{
-    height: 4em;
+  height: 4em;
   width: 100%;
   background-color: #343A40;
 }
@@ -98,4 +105,6 @@ h3{
   padding: 1.5em;
   text-align: center;
 }
+
+
 
